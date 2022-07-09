@@ -1,0 +1,116 @@
+{
+	"pages": [{
+			"path": "pages/base",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/news",
+			"style": {
+				"navigationBarTitleText": "新闻",
+				"navigationBarBackgroundColor": "#F5393B",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/index/video",
+			"style": {
+				"navigationBarTitleText": "视频",
+				"navigationBarBackgroundColor": "#F5393B",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 160
+			}
+		},
+		{
+			"path": "pages/index/user",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationBarBackgroundColor": "#F5393B",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/index/record",
+			"style": {
+				"navigationBarTitleText": "观看记录",
+				"navigationBarBackgroundColor": "#F5393B",
+				"navigationBarTextStyle": "white"
+			}
+
+		}
+	],
+	"subPackages": [{
+			"root": "pages/news",
+			"pages": [{
+				"path": "newsDetail",
+				"style": {
+					"navigationBarBackgroundColor": "#F5393B",
+					"navigationBarTextStyle": "white",
+					"navigationBarTitleText": "新闻详情"
+				}
+			}]
+		},
+		{
+			"root": "pages/news",
+			"pages": [{
+				"path": "videoDetail",
+				"style": {
+					"navigationBarBackgroundColor": "#F5393B",
+					"navigationBarTextStyle": "white",
+					"navigationBarTitleText": "视频详情"
+				}
+			}]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "H-VIDEOS",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"cl-(.*)": "cl-uni/components/cl-$1/cl-$1.vue"
+		}
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"color": "#333333",
+		"selectedColor": "#F95859",
+		"list": [{
+				"pagePath": "pages/index/news",
+				"iconPath": "static/icon/tabbar/home.png",
+				"selectedIconPath": "static/icon/tabbar/on-home.png",
+				"text": "新闻"
+			},
+			{
+				"pagePath": "pages/index/video",
+				"iconPath": "static/icon/tabbar/video.png",
+				"selectedIconPath": "static/icon/tabbar/on-video.png",
+				"text": "视频"
+			},
+			{
+				"pagePath": "pages/index/user",
+				"iconPath": "static/icon/tabbar/my.png",
+				"selectedIconPath": "static/icon/tabbar/on-my.png",
+				"text": "我的"
+			}
+		]
+	}
+}
